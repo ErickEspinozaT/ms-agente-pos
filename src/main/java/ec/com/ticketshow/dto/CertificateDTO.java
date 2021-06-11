@@ -1,28 +1,15 @@
 package ec.com.ticketshow.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CertificateDTO {
-
-    private String idPOS;
-    private String code;
-
-    public CertificateDTO(String idPOS, String code) {
-        this.idPOS = idPOS;
-        this.code = code;
-    }
-
-    public String getIdPOS() {
-        return idPOS;
-    }
-
-    public void setIdPOS(String idPOS) {
-        this.idPOS = idPOS;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
+	private String idPOS;
+	private String code;
+	private String macAddress;
+	private String ipAddress;
 }
